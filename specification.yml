@@ -83,6 +83,12 @@ paths:
         Removes the todo matching the given id.
       tags:
         - todos
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
       responses:
         '200':
           description: OK
